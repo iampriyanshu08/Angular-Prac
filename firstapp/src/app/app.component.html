@@ -1,1 +1,15 @@
-<h1>hello everyone my name is {{name}} and this is my {{title}} project...</h1>
+<h1>hello everyone my name is {{ name }}</h1>
+<h2>{{ title }}</h2>
+<!--handlebars string interpolation text binding-->
+
+<img [src]="imageurl" width="500px" />
+<!-- binding a varaiable with tha tag property is called property binding  -->
+<input [type]="inptyp" />
+<button (click)="printData()">Click</button>
+<!-- attaching an event with the button is called event binding -->
+
+<div class="circle" [class.available]="isAvailable"></div>  <!--class binding which class we want based on condition-->
+
+<app-product [pname]="'iphone 15 pro'" [imgUrl] = "'https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/article/Apple-iPhone-15-Pro-lineup-hero-230912_Full-Bleed-Image.jpg.large.jpg'"/>   <!--passing pname from app component to product component -->
+<app-product [pname]="'Samsung S24'" [imgUrl] ="'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzFlMr8YaxWg9h5C8fUmYy2c--J2FuKvxT3g&s'"/>   <!--passing pname from app component to product component -->
+<app-category/>
