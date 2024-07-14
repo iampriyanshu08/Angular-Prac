@@ -1,0 +1,12 @@
+<h1>Routing Demo</h1>
+<nav class="nav">
+  <ul class="flex">
+    <li><a routerLink="about">About</a></li>
+    <!--if you want to add router link in your component you have to import routerModule in the ts file of the same component-->
+    <li><a routerLink="services">Services</a></li>
+    <li><a routerLink="products/2">Products</a></li>
+  </ul>
+</nav>
+
+<router-outlet> </router-outlet>
+<!--placeholder for holding the compoents-->

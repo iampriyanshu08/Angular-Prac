@@ -1,0 +1,22 @@
+
+.nav{
+    display: flex;
+}
+
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+ .flex li a {
+    text-decoration: none;
+    color: red;
+    
+ }
+
+ .flex li {
+    list-style: none;
+ }
