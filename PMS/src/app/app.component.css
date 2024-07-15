@@ -1,0 +1,27 @@
+.products {
+  width: 100%;
+  padding: 5%;
+  background-color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: calc(25% / 3);
+  row-gap: 30px;
+}
+
+.product {
+  width: 25%;
+
+  background-color: white;
+  padding: 20px;
+}
+
+/* .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+ 
+}
+
+.red {
+  background-color: red;
+} */

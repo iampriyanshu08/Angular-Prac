@@ -1,0 +1,32 @@
+<!-- <h1>hello my name is  {{name}}</h1>
+<p>my age is {{age}}</p>
+<button (click) = "changeName()">Click me to change the name</button> -->
+
+<div class="products">
+  @for (product of products; track product.id) {
+  <!--It is like a foreach loop which goes to every element of the products array elements one by one and track tells you which property is uniquely identifyinhg your element-->
+  <div class="product">
+    <!-- <h4>Index:{{$index}}</h4>     -->
+    <!--index varaible is there by default -->
+    <!-- <h5>Index:{{$even}}</h5>   -->
+    <!--even var is also there   -->
+    <!-- <h5>Index:{{$odd}}</h5> -->
+    <!--odd var is also there -->
+    <h1>Name:{{ product.name }}</h1>
+    <h3>Brand:{{ product.brand }}</h3>
+    <h4>Price{{ product.price }}Rs</h4>
+
+    @if(product.inStock){
+
+    <h2>inStock:Available</h2>
+
+    } @else {
+    <!--conditional rendering -->
+    <h2>inStock:out of stock 😑</h2>
+
+    }
+    <button [disabled]="!product.inStock">Add to cart</button>
+    <!--property binding to make condition for the button to be disable or enabled-->
+  </div>
+  }
+</div>
