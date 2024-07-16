@@ -1,0 +1,16 @@
+<h1>Lifecycyle and pipes in angular</h1>
+<button (click)="changepname()">click me</button>
+<h1>{{name | lowercase}}</h1>
+<h1>{{name | uppercase}}</h1>
+
+<h2>{{price | currency:'INR'}}</h2>
+<h3>{{animal| star:3}}</h3>
+
+@if(showProd){
+  <app-product [name]="pname"/>
+}
+
+<button (click)="toggleProds()">toggle component</button>
+
+
+
